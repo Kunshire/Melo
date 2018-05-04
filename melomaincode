@@ -9,7 +9,8 @@ import random
 #RE-RE-MI-MI-DO-RE-SI-LA-SOL-RE-RE
 
 
-lang = int(input("\nCHOOSE A LANGUAGE / ESCOLHA UMA LÍNGUA / CHOISISSEZ UNE LANGUE \n1 - Português \n2 - English \n3 - Français \nType / Digite / Tapez : "))
+lang = int(input("\n----------------------- Melo v1.0 ---------------------------- \nCHOOSE A LANGUAGE / ESCOLHA UMA LÍNGUA / CHOISISSEZ UNE LANGUE \n1 - Português \n2 - English \n3 - Français \nType / Digite / Tapez : "))
+if lang >= 4: print("\nERROR! \nLanguage input not recognized. Try only the shown languages.")
 
 ### PORTUGUÊS ABAIXO ###
 
