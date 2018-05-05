@@ -9,7 +9,7 @@ import random
 #RE-RE-MI-MI-DO-RE-SI-LA-SOL-RE-RE
 
 
-lang = int(input("\n----------------------- Melo v1.0 ---------------------------- \nCHOOSE A LANGUAGE / ESCOLHA UMA LÍNGUA / CHOISISSEZ UNE LANGUE \n1 - Português \n2 - English \n3 - Français \nType / Digite / Tapez : "))
+lang = int(input("\n----------------------- Melo v0.1.1 ---------------------------- \nCHOOSE A LANGUAGE / ESCOLHA UMA LÍNGUA / CHOISISSEZ UNE LANGUE \n1 - Português \n2 - English \n3 - Français \nType / Digite / Tapez : "))
 if lang >= 4: print("\nERROR! \nLanguage input not recognized. Try only the shown languages.")
 
 ### PORTUGUÊS ABAIXO ###
@@ -77,15 +77,15 @@ while lang == 2:
     if quantidade == 2: print("\nSUGGESTION: Try numbers higher than '2' to get a more effective result.\n")
     if quantidade > 50000:
         choose = int(input("\nWARNING: \nApparently you have chosen a very high number. \nMelo will take a while to generate all the notes depending on the quantity you have chosen. \nProceed? \n1 - Yes \n2 - No, and leave Melo. \nType: "))
-        if choose == 2: sys.exit("Leaving Melo. See ya, " + nome + "!")
+        if choose == 2: sys.exit("Leaving Melo. See you soon, " + nome + "!")
     # Fim da rede de 'Ifs'.
 
     while (cont < quantidade):
         #Se houver a necessidade, adicionar variações abaixo.
-        nota = print(random.choice( ['Dó', 'Ré', 'Mi', 'Fá', 'Sol', 'Lá', 'Si'] ))
+        nota = print(random.choice( ['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si'] ))
         cont = cont + 1
   resposta = int(input("\nDo you wish to return to the Main Menu? \n1 - Yes \n2 - No \nType: "))
-  if resposta == 2: sys.exit("Leaving Melo. See ya, " + nome + "!")
+  if resposta == 2: sys.exit("Leaving Melo. See you soon, " + nome + "!")
 
 ### ANGLAIS AU-DESSUS ###
 ### FRANÇAIS AU-DESSOUS ###
