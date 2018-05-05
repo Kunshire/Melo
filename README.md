@@ -1,4 +1,4 @@
-# Melo
+# Melo - v0.1.1
 
 O Melo está disponível em 3 linguagens! :)
 Melo is available in 3 languages! :)
@@ -12,3 +12,12 @@ Just insert the amount of notes that Melo will give you a mixture of notes that 
 
 Son but est d'être un générateur de mélodies simples.
 Il suffit d'insérer le nombre de notes que Melo vous donnera un mélange de notes qui vont générer une mélodie.
+
+
+<i> v0.1: </i>
+  Melo introduction; initial minor changes.
+  
+<i> v0.1.1: </i>
+Minor changes to the design; added English and French options.
+  
+  
