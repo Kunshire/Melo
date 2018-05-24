@@ -1,6 +1,6 @@
 import sys
 import random
-
+#PyAudio ainda necessita de confirmação
 
 #MELO - Criador de Melodias
 #O propósito inicial desse código é que a cada vez que o usuário clicar em um botão específico, o aplicativo gere uma
@@ -9,8 +9,13 @@ import random
 #RE-RE-MI-MI-DO-RE-SI-LA-SOL-RE-RE
 
 
-lang = int(input("\n----------------------- Melo v0.1.1 ---------------------------- \nCHOOSE A LANGUAGE / ESCOLHA UMA LÍNGUA / CHOISISSEZ UNE LANGUE \n1 - Português \n2 - English \n3 - Français \nType / Digite / Tapez : "))
-if lang >= 4: print("\nERROR! \nLanguage input not recognized. Try only the shown languages.")
+
+lang = int(input("\n----------------------- Melo v0.1.2 ----------------------------  \n1 - Português \n2 - English \n3 - Français \n-> "))
+if lang == 4:
+    print("\n\n------- MELO V.0.1.2 ------- \nIn app Changelog: \n-> Design tweaks; \n-> Bug fixes.")
+
+if lang >= 5: print("\nERROR! \nLanguage input not recognized. Try only the shown languages.")
+
 
 ### PORTUGUÊS ABAIXO ###
 
@@ -29,13 +34,14 @@ while lang == 1:
 
   if menuinicial == 2: print(
     "\nBem-vindo ao Melo, " + nome + ".\nSeu propósito é ser um gerador de melodias simples. \nBasta inserir a quantidade de notas que o Melo vai te dar uma mistura de notas que gerará uma melodia. ")
-
-  if menuinicial == 1:
+  quantidade = 0
+  while quantidade == 0:
+   if menuinicial == 1:
     quantidade = int(input("\n" + nome + "\nQual a quantidade de notas musicais que você deseja? \nDigite: "))
     cont = 0
 
     # Rede de 'Ifs' para tornar o programa mais intuitivo.
-    if quantidade == 0: print("\nAlgo deu errado. Não é possível fazer '0' notas.")
+    if quantidade == 0: print("\nNão é possível fazer '0' notas!")
     if quantidade == 1 : print("\nSUGESTÃO: Tente números maiores que '2' para conseguir um resultado mais efetivo.\n")
     if quantidade == 2: print("\nSUGESTÃO: Tente números maiores que '2' para conseguir um resultado mais efetivo.\n")
     if quantidade > 50000:
@@ -44,8 +50,7 @@ while lang == 1:
     # Fim da rede de 'Ifs'.
 
     while (cont < quantidade):
-        #Se houver a necessidade, adicionar variações abaixo.
-        nota = print(random.choice( ['Dó', 'Ré', 'Mi', 'Fá', 'Sol', 'Lá', 'Si'] ))
+        nota = print(random.choice(['Dó', 'Ré', 'Mi', 'Fá', 'Sol', 'Lá', 'Si']))
         cont = cont + 1
   resposta = int(input("\nDeseja voltar ao menu? \n1 - Sim \n2 - Não  \nDigite: "))
   if resposta == 2: sys.exit("Saindo do Melo. Até breve, "+ nome + "!")
@@ -67,12 +72,14 @@ while lang == 2:
   if menuinicial == 2: print(
     "\nWelcome to Melo, " + nome + ".\nIts purpose is to be a simple melody generator. \nJust specify the amount of notes, and Melo is going to give you a sequence, which will form a melody. ")
 
-  if menuinicial == 1:
+  quantidade = 0
+  while quantidade == 0:
+   if menuinicial == 1:
     quantidade = int(input("\n" + nome + "\nHow many notes do you want to create? \nType: "))
     cont = 0
 
     # Rede de 'Ifs' para tornar o programa mais intuitivo.
-    if quantidade == 0: print("\nYikes, something is wrong. \nIt's impossible to generate '0' notes.")
+    if quantidade == 0: print("\nIt's impossible to generate '0' notes!")
     if quantidade == 1 : print("\nSUGGESTION: Try numbers higher than '2' to get a more effective result.\n")
     if quantidade == 2: print("\nSUGGESTION: Try numbers higher than '2' to get a more effective result.\n")
     if quantidade > 50000:
@@ -105,16 +112,18 @@ while lang == 3:
   if menuinicial == 2: print(
     "\nBienvenu(e) au Melo, " + nome + ".\nSon but est d'être un generateur simple de melódies. \nIl suffit d'ajouter la quantité de notes, Melo va te donner un mix, lequel va créer une melodie. ")
 
-  if menuinicial == 1:
+  quantidade = 0
+  while quantidade == 0:
+   if menuinicial == 1:
     quantidade = int(input("\n" + nome + "\nQuel est la quantité de notes musicaux que souhaite-toi? \nTapez: "))
     cont = 0
 
     # Rede de 'Ifs' para tornar o programa mais intuitivo.
-    if quantidade == 0: print("\nQuelque chose n'est pas OK. N'est pas possible créer '0' notes musicaux. ")
+    if quantidade == 0: print("\nN'est pas possible créer '0' notes musicaux!")
     if quantidade == 1 : print("\nSUGGESTION: Essayez des nombres plus grands que '2' pour réussir d'un résultat plus effective.\n")
     if quantidade == 2: print("\nSUGGESTION: Essayez des nombres plus grands que '2' pour réussir d'un résultat plus effective.\n")
     if quantidade > 50000:
-        choose = int(input("\nATTENTION: \nApparemment tu as choisi un nombre trés grande \nMelo va prendre un peu de temps pour créer tous les notes musicaux, dépendant de la quantité de notes que tu as choisi. \nProcéder? \n1 - Oui \n2 - Non, et sortir du Melo. \nTapez: "))
+        choose = int(input("\nATTENTION: \nApparemment tu as choisi un nombre trés grande. \nMelo va prendre un peu de temps pour créer tous les notes musicaux, dépendant de la quantité de notes que tu as choisi. \nProcéder? \n1 - Oui \n2 - Non, et sortir du Melo. \nTapez: "))
         if choose == 2: sys.exit("En train de sortir du Melo. Au revoir, "+ nome + "!")
     # Fim da rede de 'Ifs'.
 
