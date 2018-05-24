@@ -1,8 +1,4 @@
-# Melo - v0.1.1
-
-O Melo está disponível em 3 linguagens! :)
-Melo is available in 3 languages! :)
-Melo c'est disponible en 3 langues!
+# Melo - v0.1.2
 
 Seu propósito é ser um gerador de melodias simples. 
 Basta inserir a quantidade de notas que o Melo vai te dar uma mistura de notas que gerará uma melodia.
@@ -15,9 +11,12 @@ Il suffit d'insérer le nombre de notes que Melo vous donnera un mélange de not
 
 
 <i> v0.1: </i>
-  Melo introduction; initial minor changes.
+Melo introduction; initial minor changes.
   
 <i> v0.1.1: </i>
 Minor changes to the design; added English and French options.
+
+<i> v0.1.2: </i>
+Design tweaks; Bug fixes.
   
   
