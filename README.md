@@ -1,4 +1,4 @@
-# Melo - v0.1.2
+# Melo - v0.1.3
 
 Its purpose is to be a generator of simple melodies.
 Just insert the amount of notes that Melo will give you a mixture of notes that will generate a melody.
