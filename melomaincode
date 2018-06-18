@@ -9,18 +9,17 @@ import random
 #RE-RE-MI-MI-DO-RE-SI-LA-SOL-RE-RE
 
 
-
-lang = int(input("\n----------------------- Melo v0.1.2 ----------------------------  \n1 - Português \n2 - English \n3 - Français \n-> "))
-if lang == 4:
-    print("\n\n------- MELO V.0.1.2 ------- \nIn app Changelog: \n-> Design tweaks; \n-> Bug fixes.")
-
-if lang >= 5: print("\nERROR! \nLanguage input not recognized. Try only the shown languages.")
-
+lang = 5
+while lang >= 5 or lang == 0:
+ lang = int(input("\n----------------------- Melo v0.1.2 ----------------------------  \n1 - Português \n2 - English \n3 - Français \n-> "))
+ if lang == 4: sys.exit("\nLeaving so soon? :-(")
+ if lang == 0: print("\n\nIn app Changelog (v0.1.2): \n-> Design tweaks; \n-> Bug fixes.")
+ if lang >= 5: print("\nERROR: \nLanguage input not recognized. \nTry only the shown languages.")
 
 ### PORTUGUÊS ABAIXO ###
 
 while lang == 1:
- nome = input(" --- MELO --- \nQual seu nome? \nDigite: ")
+ nome = input(" \n--- MELO --- \nQual seu nome? \nDigite: ")
  resposta = 1
 
  while resposta == 1:
